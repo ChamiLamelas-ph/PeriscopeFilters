@@ -15,7 +15,7 @@ In place of the provided `DateRange` filter, one can implement it as a combinati
 * `last30d` - last 30 days (including today)
 * `thism` - this month
 * `lastm` - last month
-The dates for the second filter value and onward are also generated during query execution time in the LA time zone.
+This is placed The dates for the second filter value and onward are also generated during query execution time in the LA time zone.
 
 `StartDateRange.sql` gives the SQL used to generate the dates that can be selected as the starting date starting back from today in the LA time zone.
 
