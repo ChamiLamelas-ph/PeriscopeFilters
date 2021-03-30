@@ -2,7 +2,7 @@
 
 ## Date Range Filters 
 
-In place of the provided `DateRange` filter, one can implement it as a combination of 3 filters. The first filter (`SimpleDateRange`) will provide a list of date ranges the user can select from. The second two filters allow the user to select start (`StartDateRange`) and end (`EndDateRange`) dates from a list of dates. This is done follow [this community post](https://support.sisense.com/hc/en-us/community/posts/360037989093-Custom-Date-Range-Filter).
+In place of the provided `DateRange` filter, one can implement it as a combination of 3 filters. The first filter (`SimpleDateRange`) will provide a list of date ranges the user can select from. The second two filters allow the user to select start (`StartDateRange`) and end (`EndDateRange`) dates from a list of dates. This is done follow [this community post](https://support.sisense.com/hc/en-us/community/posts/360037989093-Custom-Date-Range-Filter) as provided by Periscope support 3/30/2021.
 
 ### Implementation
 
