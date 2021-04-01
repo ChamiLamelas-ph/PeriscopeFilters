@@ -2,11 +2,11 @@
 
 ## Date Range Filters 
 
-In place of the provided `DateRange` filter, one can implement it as a combination of 3 filters. The first filter (`CreativeDateRange2`) will provide a list of date ranges the user can select from. The second two filters allow the user to select start (`StartDateRange`) and end (`EndDateRange`) dates from a list of dates. This is done follow [this community post](https://support.sisense.com/hc/en-us/community/posts/360037989093-Custom-Date-Range-Filter) as provided by Periscope support 3/30/2021.
+In place of the provided `DateRange` filter, one can implement it as a combination of 3 filters. The first filter (`CreativeDateRange`) will provide a list of date ranges the user can select from. The second two filters allow the user to select start (`StartDateRange`) and end (`EndDateRange`) dates from a list of dates. This is done follow [this community post](https://support.sisense.com/hc/en-us/community/posts/360037989093-Custom-Date-Range-Filter) as provided by Periscope support 3/30/2021.
 
 ### Implementation
 
-`CreativeDateRange2.sql` gives the SQL used to generate the dates for the filter values:
+`CreativeDateRange.sql` gives the SQL used to generate the dates for the filter values:
 * `today` - today in LA time zone
 * `yesterday` - yesterday
 * `last3d` - last 3 days (including today)
@@ -37,11 +37,11 @@ Here the actual column being filtered is `date`. The column you filter on **must
 
 This section assumes that all three filters function as radio buttons as opposed to checkboxes and that filtering is implemented in charts using the code above.
 
-If the viewer wishes to choose one of the `CreativeDateRange2` filters, they should either:
+If the viewer wishes to choose one of the `CreativeDateRange` filters, they should either:
 * Not select any value for `StartDateRange` or `EndDateRange`.
-* Select values for `StartDateRange` and `EndDateRange` that are beyond the dates that would be included in the selected `CreativeDateRange2` filter.
+* Select values for `StartDateRange` and `EndDateRange` that are beyond the dates that would be included in the selected `CreativeDateRange` filter.
 
-If the user wishes to choose the `StartDateRange` and `EndDateRange` filters, you should remove all selections from the `CreativeDateRange2` filter to be safe. Note that in choosing these ranges, you can begin typing in the date into search bar at the top of the filter selection menu.
+If the user wishes to choose the `StartDateRange` and `EndDateRange` filters, you should remove all selections from the `CreativeDateRange` filter to be safe. Note that in choosing these ranges, you can begin typing in the date into search bar at the top of the filter selection menu.
 
 
 
