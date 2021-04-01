@@ -26,7 +26,7 @@ This is placed The dates for the second filter value and onward are also generat
 Inside charts, you can filter dates using the following SQL:
 ```
 select distinct(date) from [daily_topline_spend]
-where [date=SimpleDateRange]
+where [date=CreativeDateRange2]
 and [date>=StartDateRange]
 and [date<=EndDateRange]
 order by date
